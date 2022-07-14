@@ -9,10 +9,10 @@ class Trigo:
     
     #metodo para cosechar el objeto "Trigo"
     def cosechar(self):
-        if self.T_cosecha < 3:
+        if self.T_cosecha < 3 and self.cant_plantada != 0:
             print("Tiene que esperar para poder cosechar.")
             self.T_cosecha += 1
-        elif self.T_cosecha == 3:
+        elif self.T_cosecha == 3 and self.cant_plantada != 0:
             self.cant_almacenada += self.cant_plantada * 2
             self.cant_plantada = 0
             self.T_cosecha = 0
@@ -44,4 +44,3 @@ class Trigo:
         print("Semillas almacenadas: ", self.cant_almacenada)
         print("Semillar plantadas: ", self.cant_plantada)
         print("Dinero: ", self.dinero)
-
