@@ -10,5 +10,5 @@ En este caso, pensé en los siguientes metodos
 
 Se evidencia la funcion de cada metodo con el mismo nombre, asi que sobra explicarlo.
 
-#EJECUCIÓN
+# EJECUCIÓN
 Para la manipulacion del objeto, dentro de un bucle "while", se imprime un pequeño menu con las opciones que se pueden escoger para interactuar con el objeto, dependiendo de lo que escoja, los datos del objeto cambiaran.
