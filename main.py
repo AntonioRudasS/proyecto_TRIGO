@@ -19,7 +19,7 @@ while (fin != 1):
 
     ClearConsole()
     objeto1.mostrar()
-    print("1.Plantar\n2.cosechar\n3.Vender\n4.Comprar")
+    print("1.Plantar\n2.cosechar\n3.Vender\n4.Comprar\n5. Salir")
     opcion = input("elija: ")
 
     if opcion == '1':
@@ -37,9 +37,10 @@ while (fin != 1):
         c_c = int(input("Cuantas unidades desea comprar?: "))
         objeto1.comprar(c_c)
     
+    elif opcion == 5:
+        print("Gracias por jugar.")
+        fin = 1
+    
     else:
         print("Esa opcion no es valida.")
-        
-    print("Desea salir?\n1. si\n2. no")
-    fin = int(input("Elija: "))
 
