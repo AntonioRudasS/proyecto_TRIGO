@@ -44,3 +44,4 @@ class Trigo:
         print("Semillas almacenadas: ", self.cant_almacenada)
         print("Semillar plantadas: ", self.cant_plantada)
         print("Dinero: ", self.dinero)
+
