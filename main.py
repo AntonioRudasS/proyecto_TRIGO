@@ -2,10 +2,13 @@
 from clase_Trigo import Trigo
 #importar libreria para limpiar la consola
 import os
+#importar libreria para pausar el programa
+import time
 
 #def __init__(self, cant_almacenada, cant_plantada, precio, T_cosecha, dinero)
 objeto1 = Trigo(1, 0, 0, 0)
 fin = 0
+time_duration = 3
 
 #funcion para limpiar la consola
 def ClearConsole():
@@ -25,22 +28,27 @@ while (fin != 1):
     if opcion == '1':
         c_p = int(input("Cuantas unidades desea plantar?: "))
         objeto1.plantar(c_p)
+        time.sleep(time_duration)
         
     elif opcion == '2':
         objeto1.cosechar()
+        time.sleep(time_duration)
         
     elif opcion == '3':
         c_v = int(input("Cuantas unidades desea vender?: "))
         objeto1.vender(c_v)
+        time.sleep(time_duration)
         
     elif opcion == '4':
         c_c = int(input("Cuantas unidades desea comprar?: "))
         objeto1.comprar(c_c)
+        time.sleep(time_duration)
     
-    elif opcion == 5:
+    elif opcion == '5':
         print("Gracias por jugar.")
         fin = 1
     
     else:
         print("Esa opcion no es valida.")
+        time.sleep(time_duration)
 
